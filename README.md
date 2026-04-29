@@ -4,7 +4,7 @@ A Crowd Funding Platform on Starknet (Kick Starter, Go Fund Me inspired)
 
 Relevant Links;
 
-- X (Twitter Post) - 
+- X (Twitter Post) - https://x.com/CassandraTechs/status/2049545343050682592
 - Sepolia URL - https://hisani.cassandra.technology/
 
 ## Features
