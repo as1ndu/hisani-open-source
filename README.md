@@ -39,27 +39,26 @@ Inspect StarkZap integration folder in [`/public/js/starzap/`](/public/js/starza
 
 Located at `/hisani-webapp-deployment/public/js/constants.js`
 
-`fe_server_origin` = `'https://hisani.cassandra.technology or //'http://localhost:8787'`
-`rpc_node`         = `xxxxxxxx`
-`paymaster_key`    = `xxxxxxxx`
-
-`privy_app_id`    = `xxxxxxxx`
-`privy_client_id` = `xxxxxxxx`
+| Variable Name | Value |
+| :--- | :--- |
+| `fe_server_origin` | `'https://hisani.cassandra.technology'` or `'http://localhost:8787'` |
+| `rpc_node` | `xxxxxxxx` |
+| `paymaster_key` | `xxxxxxxx` |
+| `privy_app_id` | `xxxxxxxx` |
+| `privy_client_id` | `xxxxxxxx` |
 
 ### Backend (server side)
 
 These can be located and modified in [`/hisani-webapp-deployment/src/constants.js`](/hisani-webapp-deployment/src/constants.js)
 
-`server_origin` = `'https://localhost:8787 or https://your-domain-com`
-
-`privy_app_id` = `xxxxxxxx`
-`privy_app_secret` = `xxxxxxxx`
-
-`privy_auth_private_key` = `xxxxxxxx`
-
-`privy_signer_id` = `xxxxxxxx`
-
-`node_rpc_url` = `xxxxxxxx`
+| Variable Name | Description / Value |
+| :--- | :--- |
+| `server_origin` | `https://localhost:8787` or `https://your-domain-com` |
+| `privy_app_id` | `xxxxxxxx` |
+| `privy_app_secret` | `xxxxxxxx` |
+| `privy_auth_private_key` | `xxxxxxxx` |
+| `privy_signer_id` | `xxxxxxxx` |
+| `node_rpc_url` | `xxxxxxxx` |
 
 ## Instructions to run locally
 
