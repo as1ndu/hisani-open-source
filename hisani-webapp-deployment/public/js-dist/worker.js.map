@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../js/constants.js", "../js/worker.js"],
+  "sourcesContent": ["const fe_server_origin = 'https://hisani.cassandra.technology'//'http://localhost:8787'\nconst rpc_node         = 'https://starknet-sepolia.g.alchemy.com/starknet/version/rpc/v0_10/TyYvWTt6Fh8F2rEQSojz8'\nconst paymaster_key    = '889e02bb-9980-4ebb-a661-f949d6ab51d2'\n\nconst privy_app_id    = 'cmnus5npo02ci0ckyk3z24jbl'\nconst privy_client_id = 'client-WY6XpeHtGinvxu15hoV9QdTzR3311RWEnRRSHZXFi9Z9E'\n\nexport {\n    fe_server_origin,\n    rpc_node,\n    paymaster_key,\n\n    privy_app_id,\n    privy_client_id\n}", "import { fe_server_origin } from \"./constants\";\n\nconst server_origin = fe_server_origin\n\nasync function pull_every_campaign() {\n    const list    = await fetch(`${server_origin}/campaigns/all`)\n    const respose = await list.json()\n\n    return respose\n}\n\nsetInterval(async () => {\n    console.log('worker ...')\n    const list = await pull_every_campaign()\n   // console.log('workers.js', list)\n\n    self.postMessage(list)\n\n}, 3000);"],
+  "mappings": ";AAAA,IAAM,mBAAmB;;;ACEzB,IAAM,gBAAgB;AAEtB,eAAe,sBAAsB;AACjC,QAAM,OAAU,MAAM,MAAM,GAAG,aAAa,gBAAgB;AAC5D,QAAM,UAAU,MAAM,KAAK,KAAK;AAEhC,SAAO;AACX;AAEA,YAAY,YAAY;AACpB,UAAQ,IAAI,YAAY;AACxB,QAAM,OAAO,MAAM,oBAAoB;AAGvC,OAAK,YAAY,IAAI;AAEzB,GAAG,GAAI;",
+  "names": []
+}

@@ -1,0 +1,1 @@
+sudo npx wrangler dev --live-reload

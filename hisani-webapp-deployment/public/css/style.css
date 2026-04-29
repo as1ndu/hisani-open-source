@@ -1,0 +1,63 @@
+.dash-tile {
+    height: 200px;
+    box-sizing: border-box;
+}
+
+#campaign-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .campaign-item {
+    max-width: 800px;
+} */
+
+.acc-balance {
+    display: grid;
+    place-items: center;
+}
+
+.donation-group {
+    max-width: fit-content;
+}
+
+.fit-content {
+    max-width: fit-content;
+}
+
+.green {
+    color: rgb(79, 189, 79);
+}
+
+.white {
+    color: aliceblue;
+}
+
+.red {
+    color: brown;
+}
+
+#auth-panel {
+    max-width: 568px;
+}
+
+.icon-for-heading-fix {
+    vertical-align: 0.5px;
+    /* background-color: red; */
+}
+
+/* 
+Remove incrementor fot number types in inputs
+*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

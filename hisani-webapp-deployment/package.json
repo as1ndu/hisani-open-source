@@ -1,0 +1,29 @@
+{
+  "name": "hisani-front-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "buildJSWorker": "npx esbuild public/js/worker.js --bundle --outdir=public/js-dist --format=esm --platform=browser  --tree-shaking=true --minify=false --define:window=self --sourcemap=linked --external:crypto --external:@hyperlane-xyz",
+    "build": "npx esbuild public/js/main.js --bundle  --outdir=public/js-dist --format=esm --platform=browser  --tree-shaking=true --minify=false --sourcemap=linked --external:crypto --external:@hyperlane-xyz",
+    "compile": "npx esbuild public/js/worker.js --bundle --outdir=public/js-dist --format=esm --platform=browser  --tree-shaking=true --minify=false --define:window=self --sourcemap=linked --external:crypto --external:@hyperlane-xyz && npx esbuild public/js/main.js --bundle --outfile=public/js-dist/bundle.js --format=esm --platform=browser --minify --tree-shaking=true --external:crypto --external:@hyperlane-xyz",
+    "dev": "npx esbuild public/js/worker.js --bundle --outdir=public/js-dist --format=esm --platform=browser  --tree-shaking=true --minify=false --define:window=self --sourcemap=linked --external:crypto --external:@hyperlane-xyz && npx esbuild public/js/main.js --bundle --outfile=public/js-dist/bundle.js --format=esm --platform=browser --minify --tree-shaking=true --external:crypto --external:@hyperlane-xyz  && wrangler dev --live-reload",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "wrangler": "^4.83.0"
+  },
+  "dependencies": {
+    "@fatsolutions/tongo-sdk": "^1.5.0",
+    "@privy-io/js-sdk-core": "^0.61.0",
+    "@privy-io/node": "^0.16.0",
+    "ethers": "^6.16.0",
+    "itty-router": "^5.0.23",
+    "mustache": "^4.2.0",
+    "starknet": "^9.4.2",
+    "starkzap": "^2.0.0",
+    "viem": "^2.48.4"
+  },
+  "packageManager": "yarn@4.5.0"
+}
