@@ -37,7 +37,7 @@ Inspect StarkZap integration folder in [`/public/js/starzap/`](/public/js/starza
 
 ### Frontend (JS browser code)
 
-Located at `/hisani-webapp-deployment/public/js/constants.js`
+Located at [`/hisani-webapp-deployment/public/js/constants.js`](/hisani-webapp-deployment/public/js/constants.js)
 
 | Variable Name | Value |
 | :--- | :--- |
@@ -62,19 +62,19 @@ These can be located and modified in [`/hisani-webapp-deployment/src/constants.j
 
 ## Instructions to run locally
 
-- Navigate to hisani-webapp-deployment
+1. Navigate to hisani-webapp-deployment
   
 ```bash
 cd hisani-webapp-deployment
 ```
 
-- Install dependencies & compile
+2. Install dependencies & compile
 
 ```bash
 sudo yarn install && npm run compile
 ```
 
-- Run local instance
+3. Run local instance
 
 ```bash
 sudo npx wrangler dev --live-reload=true
