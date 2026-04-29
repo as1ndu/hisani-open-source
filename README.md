@@ -1,6 +1,11 @@
 # HISANI
 
-A Crowd Funding Platform on Starknet (Kick Starter, Go Fund Me Style)
+A Crowd Funding Platform on Starknet (Kick Starter, Go Fund Me inspired)
+
+Relevant Links;
+
+- X (Twitter Post) - 
+- Sepolia URL - https://hisani.cassandra.technology/
 
 ## Features
 

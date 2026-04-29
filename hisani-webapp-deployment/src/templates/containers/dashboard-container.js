@@ -12,8 +12,11 @@ const dashboard_template = `
             Create New Campaign
         </button>
     </div>
-
 </div>
+
+<p id="sepolia-testnet-msg">
+    <ins>This product currently runs on Starknet Sepolia.</ins> <mark><a style="text-decoration: none" href="https://faucet.circle.com/" class="contrast">Get free Sepolia USDC from Circle</a></mark>
+</p>
 
     <div class="container">
         <dialog id="campaign-form-modal" close>

@@ -10,10 +10,6 @@ const landing_template = `
         <p>Fund Starknet projects you care about.</p>
     </hgroup>
 
-    <p id="sepolia-testnet-msg">
-    <ins>This product currently runs on Starknet Sepolia.</ins> <mark><a style="text-decoration: none" href="https://faucet.circle.com/" class="contrast">Get free Sepolia USDC from Circle</a></mark>
-    </p>
-
     <div class="container">
 
     <center>
