@@ -40,26 +40,26 @@ Inspect StarkZap integration folder in [`/public/js/starzap/`](/public/js/starza
 Located at `/hisani-webapp-deployment/public/js/constants.js`
 
 `fe_server_origin` = `'https://hisani.cassandra.technology or //'http://localhost:8787'`
-`rpc_node`         = `'from Alchemy dashboard'`
-`paymaster_key`    = `'from AVNU dashboard'`
+`rpc_node`         = `xxxxxxxx`
+`paymaster_key`    = `xxxxxxxx`
 
-`privy_app_id`    = `'from Privy dashboard'`
-`privy_client_id` = `'from Privy dashboard'`
+`privy_app_id`    = `xxxxxxxx`
+`privy_client_id` = `xxxxxxxx`
 
 ### Backend (server side)
 
 These can be located and modified in [`/hisani-webapp-deployment/src/constants.js`](/hisani-webapp-deployment/src/constants.js)
 
-`server_origin`   = `'https://localhost:8787 or https://hisani.cassandra.technology, https://your-domain-com' // remember to whitelist on Privy`
+`server_origin` = `'https://localhost:8787 or https://your-domain-com`
 
-`privy_app_id`     = `'from Privy dashboard'`
-`privy_app_secret` = `'from Privy dashboard'`
+`privy_app_id` = `xxxxxxxx`
+`privy_app_secret` = `xxxxxxxx`
 
-`privy_auth_private_key` = `'from Privy dashboard'`
+`privy_auth_private_key` = `xxxxxxxx`
 
-`privy_signer_id`  = `'from Privy dashboard'`
+`privy_signer_id` = `xxxxxxxx`
 
-`node_rpc_url`    = `'from Privy alchemy'`
+`node_rpc_url` = `xxxxxxxx`
 
 ## Instructions to run locally
 
